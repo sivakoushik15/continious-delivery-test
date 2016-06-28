@@ -1,0 +1,13 @@
+# http://www.alexecollins.com/migrating-to-circleci/
+# https://circleci.com/docs/config-sample/
+machine:
+  java:
+    version: oraclejdk8
+  node:
+    version: 4.4
+dependencies:
+  override:
+    - npm install -g bower
+    - npm install
+    - bower install
+    - mvn install -DskipTests
