@@ -30,7 +30,7 @@ build:
         code: sudo npm install -g bower
     - script:
         name: run bower install
-        code: bower install
+        code: bower install --allow-root
     # A step that executes `npm test` command
     - npm-test
 
