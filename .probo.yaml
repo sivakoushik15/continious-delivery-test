@@ -3,8 +3,11 @@ steps:
     plugin: Shell
     command: 'npm install -g bower'
   - name: Install NPM packages
+    plugin: Shell
     command: 'npm install'
   - name: Install bower dependencies
+    plugin: Shell
     command: 'bower install'
   - name: Execute maven build
+    plugin: Shell
     command: 'mvn install -DskipTests'
