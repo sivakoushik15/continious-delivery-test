@@ -7,7 +7,6 @@ jobs:
             -   name: Run Analysis
                 uses: borisbsu/codescan-scanner-action@main
                 with:
-                    milliseconds: 1000
                     login: ${{ secrets.SONAR_TOKEN }}
                     organization: 5efa11fdda6b0c001320f461
                     projectKey: continious-delivery-test
