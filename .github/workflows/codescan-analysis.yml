@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: Run Analysis
-                uses: borisbsu/codescan-scanner-action@codescan-scanner-action-impl
+                uses: borisbsu/codescan-scanner-action@master
                 with:
                     login: ${{ secrets.SONAR_TOKEN }}
                     organization: 5efa11fdda6b0c001320f461
