@@ -17,5 +17,7 @@ jobs:
                         sonar.verbose=true
             -   name: Browse folder
                 run: ls -la
+            -   name: Browse folder
+                run: ls -la .scannerwork
             -   name: Cat report-task.txt
                 run: .scannerwork/report-task.txt
