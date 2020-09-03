@@ -39,7 +39,7 @@ jobs:
                     organization: 5efa11fdda6b0c001320f461
                     projectKey: continious-delivery-test
                     codeScanUrl: https://test.codescan.io/
-                    args: >
+                    args:
                         sonar.test.exclusions=tests/**
                         sonar.tests=tests/
                         sonar.verbose=true
