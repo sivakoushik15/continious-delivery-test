@@ -30,7 +30,7 @@ jobs:
                     restore-keys: ${{ runner.os }}-m2
 
             -   name: Build with Maven
-                run: mvn package
+                run: mvn package -DskipTests
 
             -   name: Run Analysis
                 uses: borisbsu/codescan-scanner-action@main
