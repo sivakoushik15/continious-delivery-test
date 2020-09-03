@@ -12,9 +12,9 @@ jobs:
                     projectKey: continious-delivery-test
                     codeScanUrl: https://test.codescan.io/
                     args: >
-                        -Dsonar.test.exclusions=tests/**
-                        -Dsonar.tests=tests/
-                        -Dsonar.verbose=true
+                        sonar.test.exclusions=tests/**
+                        sonar.tests=tests/
+                        sonar.verbose=true
             -   name: Browse folder
                 run: ls -la
             -   name: Cat report-task.txt
