@@ -1,12 +1,11 @@
 on: [push]
 
 jobs:
-    analyze:
-        name: Analyze
+    codescan:
         runs-on: ubuntu-latest
         steps:
             -   name: Prepare Analysis Configuration
-                uses: borisbsu/setup-sonar-scanner@v1
+                uses: borisbsu/setup-sonar-scanner@v2
             -   name: Run Code Analysis
                 env:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
