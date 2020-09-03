@@ -1,11 +1,17 @@
-- name: Setup sonarqube
-  uses: borisbsu/setup-sonar-scanner@v2
-- name: Run sonarqube
-  env:
-      # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  run: sonar-scanner
-      -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-      -Dsonar.organization=5efa11fdda6b0c001320f461
-      -Dsonar.host.url=https://test.codescan.io/
-      -Dsonar.projectKey=continious-delivery-test
+on: [push]
+
+jobs:
+    analyze:
+        name: Analyze
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Prepare Analysis Configuration
+                uses: borisbsu/setup-sonar-scanner@v1
+            -   name: Run Code Analysis
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: sonar-scanner
+                    -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+                    -Dsonar.organization=5efa11fdda6b0c001320f461
+                    -Dsonar.host.url=https://test.codescan.io/
+                    -Dsonar.projectKey=continious-delivery-test
