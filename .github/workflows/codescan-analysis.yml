@@ -14,3 +14,5 @@ jobs:
                     -Dsonar.organization=5efa11fdda6b0c001320f461
                     -Dsonar.host.url=https://test.codescan.io/
                     -Dsonar.projectKey=continious-delivery-test
+            -   name: Browse folder
+                run: ls -la
