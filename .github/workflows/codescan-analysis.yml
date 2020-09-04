@@ -50,3 +50,8 @@ jobs:
                 run: ls -la .scannerwork
             -   name: Cat report-task.txt
                 run: cat .scannerwork/report-task.txt
+            -   name: Upload report-task.txt
+                uses: actions/upload-artifact@v2
+                    with:
+                        name: report-task.txt
+                        path: .scannerwork/report-task.txt
