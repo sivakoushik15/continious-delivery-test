@@ -40,8 +40,6 @@ jobs:
                     projectKey: continious-delivery-test
                     codeScanUrl: https://test.codescan.io/
                     args: |
-                        sonar.test.exclusions=tests/**
-                        sonar.tests=tests/
                         sonar.verbose=true
                         sonar.java.binaries=target
             -   name: Browse folder
