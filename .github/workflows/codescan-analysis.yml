@@ -40,7 +40,7 @@ jobs:
                     login: ${{ secrets.SONAR_LOCAL_TOKEN }}
                     organization: barys-o
                     projectKey: java-project
-                    codeScanUrl: http://164e4e92f2c0.ngrok.io/
+                    codeScanUrl: https://codescan.pagekite.me/
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
