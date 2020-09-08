@@ -42,13 +42,8 @@ jobs:
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
-            -   name: Browse folder
-                run: ls -la
-            -   name: Browse folder
-                run: ls -la .scannerwork
-            -   name: Cat report-task.txt
-                run: cat .scannerwork/report-task.txt
-            -   name: Upload report-task.txt
+
+            -   name: Add report-task.txt artifact
                 uses: actions/upload-artifact@v2
                 with:
                     name: report-task.txt
