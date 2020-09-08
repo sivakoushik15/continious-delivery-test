@@ -35,10 +35,10 @@ jobs:
             -   name: Run Analysis
                 uses: borisbsu/codescan-scanner-action@main
                 with:
-                    login: ${{ secrets.SONAR_TOKEN }}
-                    organization: 5efa11fdda6b0c001320f461
-                    projectKey: continious-delivery-test
-                    codeScanUrl: https://test.codescan.io/
+                    login: ${{ secrets.SONAR_LOCAL_TOKEN }}
+                    organization: barys-o
+                    projectKey: java-project
+                    codeScanUrl: http://164e4e92f2c0.ngrok.io/
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
