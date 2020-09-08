@@ -22,10 +22,12 @@ jobs:
                 with:
                     java-version: 1.8
 
-            -   name: Cache Maven packages
+            -   name: Cache files
                 uses: actions/cache@v2
                 with:
-                    path: ~/.m2
+                    path: |
+                        ~/.m2
+                        ~/.sonar
                     key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
                     restore-keys: ${{ runner.os }}-m2
 
