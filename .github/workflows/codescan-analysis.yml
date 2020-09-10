@@ -44,10 +44,9 @@ jobs:
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
-                        sonar.report.sarif=true
-                        codescan.report.sarif=true
-                        sonar.analysis.report.sarif=true
-                        sonar.analysis.codescan.report.sarif=true
+                        sonar.scanner.report.enabled=true
+                        sonar.analysis.report.enabled=true
+                        sonar.analysis.report.type=sarif
 
             -   name: Upload report-task.txt file
                 uses: actions/upload-artifact@v2
