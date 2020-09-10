@@ -44,7 +44,7 @@ jobs:
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
-                        sonar.scanner.report.enabled=true
+                        sonar.scanner.report.enabled=false
                         sonar.analysis.report.enabled=true
                         sonar.analysis.report.type=sarif
 
