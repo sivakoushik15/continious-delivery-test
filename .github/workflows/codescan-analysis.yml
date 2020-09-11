@@ -45,12 +45,6 @@ jobs:
                         sonar.verbose=true
                         sonar.java.binaries=target
 
-            -   name: Upload report-task.txt file
-                uses: actions/upload-artifact@v2
-                with:
-                    name: report-task.txt
-                    path: .scannerwork/report-task.txt
-
             -   name: Upload SARIF file
                 uses: github/codeql-action/upload-sarif@v1
                 with:
