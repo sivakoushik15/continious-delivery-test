@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-    codescan:
+    CodeScan:
         runs-on: ubuntu-latest
         steps:
             # Checkout your code repository to scan
@@ -37,10 +37,10 @@ jobs:
             -   name: Run Analysis
                 uses: codescan-io/codescan-scanner-action@main
                 with:
-                    login: ${{ secrets.SONAR_LOCAL_TOKEN }}
-                    organization: barys-o
-                    projectKey: java-project
-                    codeScanUrl: https://codescan.pagekite.me/
+                    login: ${{ secrets.SONAR_TEST_TOKEN }}
+                    organization: 5efa11fdda6b0c001320f461
+                    projectKey: new-project
+                    codeScanUrl: https://test.codescan.io/
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
