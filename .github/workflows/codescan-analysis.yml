@@ -37,7 +37,7 @@ jobs:
                 run: mvn package -DskipTests
 
             -   name: Run Analysis
-                uses: borisbsu/codescan-scanner-action@main
+                uses: codescan-io/codescan-scanner-action@master
                 with:
                     login: ${{ secrets.SONAR_TEST_TOKEN }}
                     organization: 5efa11fdda6b0c001320f461
