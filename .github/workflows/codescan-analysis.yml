@@ -37,12 +37,12 @@ jobs:
                 run: mvn package -DskipTests
 
             -   name: Run Analysis
-                uses: codescan-io/codescan-scanner-action@master
+                uses: codescan-io/codescan-scanner-action
                 with:
-                    login: ${{ secrets.SONAR_LOCAL_TOKEN }}
-                    organization: barys-o
+                    login: ${{ secrets.SONAR_TEST_TOKEN }}
+                    organization: 5efa11fdda6b0c001320f461
                     projectKey: ci1
-                    codeScanUrl: https://codescan.pagekite.me/
+                    codeScanUrl: https://test.codescan.io
                     pollingTimeoutSec: 300
                     generateSarifFile: true
                     args: |
