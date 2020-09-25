@@ -1,3 +1,5 @@
+name: CodeScan
+
 on: [push]
 
 jobs:
