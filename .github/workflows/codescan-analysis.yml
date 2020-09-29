@@ -41,7 +41,7 @@ jobs:
                 with:
                     login: ${{ secrets.SONAR_TEST_TOKEN }}
                     organization: 5efa11fdda6b0c001320f461
-                    projectKey: ci1
+                    projectKey: ci2
                     codeScanUrl: https://test.codescan.io
                     args: |
                         sonar.verbose=true
