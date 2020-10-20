@@ -1,3 +1,4 @@
+
 [![Actions Status: CodeQL](https://github.com/borisbsu/continious-delivery-test/workflows/CodeQL/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"CodeQL")
 [![Actions Status: CodeScan](https://github.com/borisbsu/continious-delivery-test/workflows/CodeScan/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"CodeScan")
 [![Actions Status: OSSAR](https://github.com/borisbsu/continious-delivery-test/workflows/OSSAR/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"OSSAR")
