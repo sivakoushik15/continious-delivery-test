@@ -1,3 +1,7 @@
+
+
+
+
 [![Actions Status: CodeQL](https://github.com/borisbsu/continious-delivery-test/workflows/CodeQL/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"CodeQL")
 [![Actions Status: CodeScan](https://github.com/borisbsu/continious-delivery-test/workflows/CodeScan/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"CodeScan")
 [![Actions Status: OSSAR](https://github.com/borisbsu/continious-delivery-test/workflows/OSSAR/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"OSSAR")
@@ -84,4 +88,3 @@ To setup this project in Jenkins, use the following configuration:
 [BrowserSync]: http://www.browsersync.io/
 [Karma]: http://karma-runner.github.io/
 [Jasmine]: http://jasmine.github.io/2.0/introduction.html
-[Protractor]: https://angular.github.io/protractor/
