@@ -39,9 +39,9 @@ jobs:
             -   name: Run Analysis
                 uses: codescan-io/codescan-scanner-action@master
                 with:
-                    login: ${{secrets.SONAR_PROD_TOKEN}}
-                    organization: 5efa11fdda6b0c001320f461
-                    projectKey: test-project
+                    login: ${{secrets.SONAR_TEST_TOKEN}}
+                    organization: jan-2021
+                    projectKey: march-2021
                     args: |
                         sonar.verbose=true
                         sonar.java.binaries=target
