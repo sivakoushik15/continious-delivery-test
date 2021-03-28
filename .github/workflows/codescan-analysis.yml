@@ -39,6 +39,7 @@ jobs:
             -   name: Run Analysis
                 uses: codescan-io/codescan-scanner-action@master
                 with:
+                    codeScanUrl: https://test.codescan.io/
                     login: ${{secrets.SONAR_TEST_TOKEN}}
                     organization: jan-2021
                     projectKey: march-2021
