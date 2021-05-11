@@ -2,7 +2,7 @@
 [![Actions Status: CodeScan](https://github.com/borisbsu/continious-delivery-test/workflows/CodeScan/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"CodeScan")
 [![Actions Status: OSSAR](https://github.com/borisbsu/continious-delivery-test/workflows/OSSAR/badge.svg)](https://github.com/borisbsu/continious-delivery-test/actions?query=workflow%3A"OSSAR")
 
-## Development Notes
+## Development Notes!
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 
