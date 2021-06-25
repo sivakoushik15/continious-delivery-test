@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.*;
 
 /**
  * Test class for the UserResource REST controller.
- * 
+ *   
  * @see UserService
  */
 @RunWith(SpringJUnit4ClassRunner.class)
