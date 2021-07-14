@@ -18,7 +18,7 @@ public class generateRandom{
 		// Generate Random doubles
 		double rand_dub1 = rand.nextouble();
 		double rand_dub2 = rand.nextDouble();
-
+        System.out.println("New Pull changes in github ");
 		// Print random doubles
 		System.out.println("Random Doubles: "+rand_dub1);
 		System.out.println("Random Doubles: "+rand_dub2);
