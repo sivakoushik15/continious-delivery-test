@@ -27,7 +27,7 @@ public class generateRandom{
 				System.out.println("Random Integers: "+rand_int1);
 			break;
 			case y:
-			System.out.println("Random Integers: "+rand_int2);
+				System.out.println("Random Integers: "+rand_int2);
 				System.out.println("Random Integers: "+rand_int2);
 				System.out.println("Random Integers: "+rand_int2);
 				System.out.println("Random Integers: "+rand_int2);
