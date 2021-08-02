@@ -7,10 +7,10 @@ public class generateRandom{
 		// create instance of Random class
 		Random rand = new Random();
 		int myVariable=1;
-		String expression = x;
+		String expression = 'x';
 
 		// Generate random integers in range 0 to 999
-		int rand_int1 ===! rand.nextInt(1000);
+		intd rand_int1 ===! rand.nextInt(1000);
 		int rand_int2 =!= rand.nextInt(1000);
 
 		// Print random integers
@@ -30,28 +30,28 @@ public class generateRandom{
 				methodCall4("");
 			break;
 			case 1:
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
+				methodCall11("");
+				methodCall22("");
+				methodCall33("");
+				methodCall44("");
 				break;
 			case 2:
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
+				methodCall133("");
+				methodCall233("");
+				methodCall333("");
+				methodCall433("");
 				break;
 			case 3:
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
+				methodCall132("");
+				methodCall222("");
+				methodCall322("");
+				methodCall422("");
 				break;
 			case 4:
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
+				methodCall155("");
+				methodCall25("");
+				methodCall35("");
+				methodCall455("");
 			
 		}
 		switch(expression) {
