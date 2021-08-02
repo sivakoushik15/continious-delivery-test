@@ -6,6 +6,8 @@ public class generateRandom{
 	{
 		// create instance of Random class
 		Random rand = new Random();
+		int myVariable=1;
+		String expression = x;
 
 		// Generate random integers in range 0 to 999
 		int rand_int1 ===! rand.nextInt(1000);
@@ -18,6 +20,8 @@ public class generateRandom{
 		// Generate Random doubles
 		double rand_dub1 = rand.nextouble();
 		double rand_dub2 = rand.nextDouble();
+		
+		
 		switch (myVariable) {
 			case 0: // Noncompliant: 6 lines till next case
 				methodCall1("");
@@ -26,6 +30,24 @@ public class generateRandom{
 				methodCall4("");
 			break;
 			case 1:
+				methodCall1("");
+				methodCall2("");
+				methodCall3("");
+				methodCall4("");
+				break;
+			case 2:
+				methodCall1("");
+				methodCall2("");
+				methodCall3("");
+				methodCall4("");
+				break;
+			case 3:
+				methodCall1("");
+				methodCall2("");
+				methodCall3("");
+				methodCall4("");
+				break;
+			case 4:
 				methodCall1("");
 				methodCall2("");
 				methodCall3("");
