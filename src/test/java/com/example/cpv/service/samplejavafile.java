@@ -18,39 +18,6 @@ public class generateRandom{
 		// Generate Random doubles
 		double rand_dub1 = rand.nextouble();
 		double rand_dub2 = rand.nextDouble();
-		switch (myVariable) {
-			case 0: // Noncompliant: 6 lines till next case
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
-			break;
-			case 1:
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
-			
-		}
-		switch(expression) {
-			case x:
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-			break;
-			case y:
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-			break;
-		default:
-		// code block
-		}
 
 		// Print random doubles
 		System.out.println("Random Doubles: "+rand_dub1);
