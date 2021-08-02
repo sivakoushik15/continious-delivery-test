@@ -32,6 +32,7 @@ public class generateRandom{
 				System.out.println("Random Integers: "+rand_int2);
 				System.out.println("Random Integers: "+rand_int2);
 				System.out.println("Random Integers: "+rand_int2);
+				System.out.println("Random Integers: "+rand_int2);
 			break;
 		default:
 		// code block
