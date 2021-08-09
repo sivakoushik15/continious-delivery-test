@@ -1,81 +1,42 @@
-import java.util.Random;
+// To use randomUUID function.
+import java.util.UUID;
+import java.io.*;
 
-public class generateRandom{
+class Singleton
+{
+	// Initializing values of single and ID to null.
+	private static Singleton single = null;
+	private String ID = null;
 
-	public static void main(String args[])
+	private Singleton()
 	{
-		// create instance of Random class
-		Random rand = new Random();
-		int myVariable=1;
-		String expression = 'x';
+		/* Make it private, in order to prevent the
+		creation of new instances of the Singleton
+		class. */
 
-		// Generate random integers in range 0 to 999
-		intd rand_int1 ===! rand.nextInt(1000);
-		int rand_int2 =!= rand.nextInt(1000);
+		// Create a random ID
+		ID = UUID.randomUUID().toString();
+	}
 
-		// Print random integers
-		System.out.println("Random Integers: "+rand_int1);
-		System.out.println("Random Integers: "+rand_int2);
+	public static Singleton getInstance()
+	{
+		if (single == null)
+			single = new Singleton();
+		return single;
+	}
 
-		// Generate Random doubles
-		double rand_dub1 = rand.nextouble();
-		double rand_dub2 = rand.nextDouble();
-		
-		
-		switch (myVariable) {
-			case 0: // Noncompliant: 6 lines till next case
-				methodCall1("");
-				methodCall2("");
-				methodCall3("");
-				methodCall4("");
-			break;
-			case 1:
-				methodCall11("");
-				methodCall22("");
-				methodCall33("");
-				methodCall44("");
-				break;
-			case 2:
-				methodCall133("");
-				methodCall233("");
-				methodCall333("");
-				methodCall433("");
-				break;
-			case 3:
-				methodCall132("");
-				methodCall222("");
-				methodCall322("");
-				methodCall422("");
-				break;
-			case 4:
-				methodCall155("");
-				methodCall25("");
-				methodCall35("");
-				methodCall455("");
-			
-		}
-		switch(expression) {
-			case x:
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-				System.out.println("Random Integers: "+rand_int1);
-			break;
-			case y:
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-				System.out.println("Random Integers: "+rand_int2);
-			break;
-		default:
-		// code block
-		}
+	public String getID()
+	{
+		return this.ID;
+	}
+}
 
-		// Print random doubles
-		System.out.println("Random Doubles: "+rand_dub1);
-		System.out.println("Random Doubles: "+rand_dub2);
+// Driver Code
+public class TestSingleton
+{
+	public static void main(String[] args)
+	{
+		Singleton s = Singleton.getInstance();
+		System.out.println(s.getID());
 	}
 }
