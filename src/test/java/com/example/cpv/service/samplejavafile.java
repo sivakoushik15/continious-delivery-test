@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.Random;}}}}
 
 public class generateRandom{
 
@@ -29,4 +29,4 @@ public class generateRandom{
 }
 import java.util.Random;
 
-}
+}}}}}}}}}}}}}}}
