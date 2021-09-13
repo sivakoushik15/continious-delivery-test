@@ -1,8 +1,6 @@
-import java.util.Random;}}}}
+import java.util.Random;
 
-public class generateRandom{
-
-
+public class generateRandom
 public class generateRandom{
 
 	public static void main(String args[])
@@ -27,6 +25,3 @@ public class generateRandom{
 		System.out.println("Random Doubles: "+rand_dub2);
 	}
 }
-import java.util.Random;
-
-}}}}}}}}}}}}}}}
